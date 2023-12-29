@@ -168,6 +168,13 @@
             console.log('Right-click is blocked');
         });
     </script>
+    <script>
+    // Check if the current protocol is "http"
+    if (window.location.protocol === "http:") {
+      // Redirect to the same URL with "https"
+      window.location.href = "https://" + window.location.host + window.location.pathname;
+    }
+  </script>
 </body>
 
 </html>
