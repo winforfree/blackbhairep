@@ -1,47 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 Error - Page Not Found</title>
-    <link rel="stylesheet" href="path/to/your/stylesheet.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>404 - Page not found</title>
+    <meta name="renderer" content="webkit"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no"/>
     <style>
-        .page_404 { padding: 40px 0; background: #fff; font-family: 'Arvo', serif; }
-        .page_404 img { width: 100%; }
-        .four_zero_four_bg { background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif); height: 400px; background-position: center; }
-        .four_zero_four_bg h1 { font-size: 80px; }
-        .four_zero_four_bg h3 { font-size: 80px; }
-        .link_404 { color: #fff!important; padding: 10px 20px; background: #39ac31; margin: 20px 0; display: inline-block; }
-        .contant_box_404 { margin-top: -50px; }
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: "微软雅黑";
+        }
+
+        img {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .container {
+            max-width: 90%;
+            margin: 0 auto;
+            padding-top: 80px;
+        }
+
+        .bg {
+            display: block;
+            max-width: 100%;
+            margin: 0px auto;
+        }
+
+        .btn {
+            width: 400px;
+            margin: 0 auto;
+            max-width: 100%;
+            margin-top: 40px;
+        }
+
+        .btn a {
+            float: left;
+            text-decoration: none;
+            width: 46.5%;
+            border: 1px solid #5298ff;
+            background: #5298ff;
+            color: #FFF;
+            display: block;
+            height: 46px;
+            line-height: 44px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .btn .goindex {
+            margin-right: 7%;
+        }
+
+        .btn .lx {
+            border: 1px solid #d8d8d8;
+            background: #ffffff;
+            color: #8c8c8c;
+        }
+
+        @media screen and (max-width: 500px) {
+            .btn {
+                width: 85%;
+            }
+
+            .btn a {
+                width: 100%;
+                font-size: 15px;
+                height: 42px;
+                line-height: 42px;
+            }
+
+            .btn .goindex {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
     </style>
 </head>
 <body>
-
-<section class="page_404">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="col-sm-10 col-sm-offset-1 text-center">
-                    <div class="four_zero_four_bg">
-                        <h1 class="text-center">404</h1>
-                    </div>
-
-                    <div class="contant_box_404">
-                        <h3 class="h2">Look like you're lost</h3>
-                        <p>The page you are looking for is not available!</p>
-                        <a href="/" class="link_404">Go to Home</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+<div class="container">
+    <img src="https://i.ibb.co/wL55bCz/404.png" class="bg"/>
+    <div class="btn">
+        <a href="https://alink.pp.ua/duckist" class="goindex">Back to Previous Page</a>
+        <a href="https://alink.pp.ua/duckist" target="_blank" class="lx">Watch Video</a>
+        <div style="clear: both;"></div>
     </div>
-</section>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+</div>
 </body>
 </html>
-
